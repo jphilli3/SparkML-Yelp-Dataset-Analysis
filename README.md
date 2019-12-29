@@ -36,7 +36,7 @@ The month when the most Yelp reviews are posted is July with 649136 reviews.
 
 The city with the most Yelp reviews is Las Vegas with 2,030,798 reviews.
 
-![Question 4](plots/LasVegasBusinessReviews.png)
+![Question 4](LasVegasBusinessReviews.png)
 
 The Business Reviews In Las Vegas plot shows the businesses in the city of Las Vegas plotted using their longitude and latitude.  The rating is colored green, yellow and red; with a max rating of 5.0, a middle rating of 2.5, and a lowest rating of 0.0 respectively.
 
@@ -44,7 +44,7 @@ The Business Reviews In Las Vegas plot shows the businesses in the city of Las V
 
 The average rating for a Yelp review that is found useful is 3.53 stars whith an average amount of useful votes of 2.91.
 
-![Question 8](plots/ReviewUsefulness.png)
+![Question 8](ReviewUsefulness.png)
 
 The Review Usefulness and Text Length plot shows each review with more than 3 useful votes (the average number of useful votes) plotted by the number of useful votes and the length of the review by characters. The rating is colored green, yellow and red; with a max rating of 5.0, a middle rating of 2.5, and a lowest rating of 0.0 respectively.
 
@@ -52,7 +52,7 @@ The Review Usefulness and Text Length plot shows each review with more than 3 us
 
 The average rating for a Yelp review that is found funny is 3.53 stars whith an average amount of funny votes of 0.95.
 
-![Question 9](plots/ReviewFunniness.png)
+![Question 9](ReviewFunniness.png)
 
 The Review Funniness and Text Length plot shows each review with more than 1 funny votes (the average number of funny votes) plotted by the number of funny votes and the length of the review by characters. The rating is colored green, yellow and red; with a max rating of 5.0, a middle rating of 2.5, and a lowest rating of 0.0 respectively.
 
@@ -61,7 +61,7 @@ The Review Funniness and Text Length plot shows each review with more than 1 fun
 The average rating for a Yelp review that is found cool is 3.53 stars whith an average amount of cool votes of 1.16.
 
 Surprisingly there was no difference in the average rating of a Yelp review for useful, funny, or cool.
-![Question 10](plots/ReviewCoolness.png)
+![Question 10](ReviewCoolness.png)
 
 The Review Coolness and Text Length plot shows each review with more than 1 cool votes (the average number of cool votes) plotted by the number of cool votes and the length of the review by characters. The rating is colored green, yellow and red; with a max rating of 5.0, a middle rating of 2.5, and a lowest rating of 0.0 respectively.
 
@@ -90,11 +90,11 @@ It is clear that the length of a review's text does not correlate with with the 
 
 It is also clear that not looking at the length of a review's text and just the usefulness, funniness, and coolness fields themselves does not improve the average error and actually makes it worse.  Therefore, text length does seem to play a role in predicting the rating of a review; just not a large role.
 
-![Question 1](plots/Regression.png)
+![Question 1](Regression.png)
 
 The plot confirms that using the length of a review's text, number of useful votes, number of funny votes, and number of cool votes alone does not predict the rating of a review very well, but there are a few outliers that seem to show that in certain situations it is a good predictor.  Those being when the rating is very low and the text length is high and when the text length is around 1500 and the rating is around a 4.
 
-![Question 2](plots/Kmeans1.png)
+![Question 2](Kmeans1.png)
 
 Using a Kmeans Classifier with K = 5, I was able to get more accurate predictions for higher ratings using the review's text length, number of useful votes, number of funny votes, and number of cool votes.
 
